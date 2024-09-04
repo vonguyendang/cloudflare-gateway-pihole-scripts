@@ -19,7 +19,6 @@ jobs:
   cgps:
     runs-on: ubuntu-latest
     steps:
-
       - name: Clone repository
       run: |
         git clone https://github.com/${{ github.repository }}.git
