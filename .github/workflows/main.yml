@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: "vonguyendang/cloudflare-gateway-pihole-scripts"
-          ref: "main"
+          ref: "v1"
 
       - name: Install Node.js
         uses: actions/setup-node@v4
