@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        repository: "vonguyendang/cloudflare-gateway-pihole-scripts"
-        ref: "beta"
+    - name: Clone repository and switch to beta branch
+      run: |
+        git clone https://github.com/mrrfv/cloudflare-gateway-pihole-scripts.git
+        cd cloudflare-gateway-pihole-scripts
+        git checkout beta
 
     - name: Install Node.js
       uses: actions/setup-node@v4
