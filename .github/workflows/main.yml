@@ -65,12 +65,3 @@ jobs:
         PING_URL: ${{ secrets.PING_URL }}
       run: |
         curl "${{ env.PING_URL }}"
-        
-   keepalive:
-      runs-on: ubuntu-latest
-      permissions:
-        actions: write
-        contents: read
-      steps:
-        - uses: actions/checkout@v4
-        - uses: gautamkrishnar/keepalive-workflow@v2
