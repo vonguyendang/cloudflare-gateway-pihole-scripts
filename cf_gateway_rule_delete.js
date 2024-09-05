@@ -8,7 +8,7 @@ const ACCOUNT_EMAIL = process.env.CLOUDFLARE_ACCOUNT_EMAIL;
 // Function to read Cloudflare Zero Trust rules
 async function getZeroTrustRules() {
   const response = await axios.get(
-    `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/rules`,
+    `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai-gateway/gateways`,
     {
       headers: {
         'Authorization': `Bearer ${API_TOKEN}`,
