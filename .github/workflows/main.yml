@@ -20,9 +20,9 @@ jobs:
         git checkout beta
 
     - name: Install Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v3
       with:
-        node-version-file: ".node-version"
+        node-version-file: 16
 
     - name: Install npm dependencies
       run: npm ci
