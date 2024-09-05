@@ -32,7 +32,7 @@ async function getZeroTrustRules() {
 
     const resp = await axios.request({
         method: 'DELETE',
-        url: `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/gateway/rules/${filtered_rule.id}`,
+        url: `https://api.cloudflare.com/client/v4/accounts/${ACCOUNT_ID}/ai-gateway/gateways/${filtered_rule.id}`,
         headers: {
             'Authorization': `Bearer ${API_TOKEN}`,
             'Content-Type': 'application/json',
